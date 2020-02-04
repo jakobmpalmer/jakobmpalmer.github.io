@@ -1,6 +1,31 @@
-var descriptors = ["Software Engineer", "Data Hoarder", "Tech Enthusiast"];
+var descriptors = ["Software Engineer", "Archivist", "Tech Enthusiast", "Animal Lover"];
 
+function getString(){
+    var currentDesc = document.getElementById('string-descriptor');
+    currentDesc = descriptors[Math.random() * descriptors.length];
+}
 
+function textSlide(){
+    //alert("TextSlide");
+    var currentString = document.getElementById('stringDescriptor');
+    var newString = currentString.innerHTML.valueOf();
+    alert(newString + " ..")
+    
+    var stringWidth = (newString.clientWidth + 1) + "px";
+
+    anime({targets: currentString,
+    duration: 2000,
+    translateX: screen.width/2 - stringWidth /2,});
+}
+
+//function beginTextSlide(){
+if(requestIdleCallback in window){
+    alert("callback");
+    setInterval(textSlide(), 10000)
+} else {
+    //alert("No support for callback!");
+    setTimeout(textSlide(), 10);
+}
 // $(document).ready(() => {
 // 	anime({
 // 		targets: 'div.boxGroup',
