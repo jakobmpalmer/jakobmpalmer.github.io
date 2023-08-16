@@ -1,0 +1,26 @@
+body{
+    font: normal bold 1.5rem/1.8 'Roboto', sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+  }
+  .button{
+    text-decoration: none;
+    padding: 1em 2.5em; 
+    background-color: #f93939; 
+    color: #fff; 
+    border-radius: 0.25em;
+    
+    background-image: linear-gradient(75deg, #FDC830, #F37335, #f12711, #f5af19); 
+    background-size: 300% ;
+    background-position: left;
+    
+    transition: 300ms background-position ease-in-out;
+    
+  }
+  .button:hover{
+    background-position: right; 
+  }
+  
