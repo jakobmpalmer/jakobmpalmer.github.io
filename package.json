@@ -10,6 +10,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
+    "predeploy": "npm run build",
+    "deploy": "gh=pages-d build",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
