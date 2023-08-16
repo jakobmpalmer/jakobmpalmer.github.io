@@ -1,0 +1,167 @@
+// @import url('../fonts.css');
+
+.PageContainer {
+    color: "#232129";
+    // font-family: "-apple-system, Roboto, sans-serif, serif";
+    width: 80%;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0px auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+ 
+.FullscreenImage {
+  flex-grow: 1; 
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/dan-meyers-FtXCKGIWiqM-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-color:#0000002c;
+  // mask-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/sun.svg);
+  // mask-image:url('../images/mask.svg');
+  // mask-size: 150vmin;
+  // mask-repeat: no-repeat;
+  // mask-position: center;
+  
+}
+
+.BackgroundContainer {
+  background-color: var(--color-background);
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+
+.TitleContainer {
+    // margin: 0px auto;
+    display: flex;
+    // margin: 0px auto;
+    min-height: 30vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--color-text-main);
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.backgroundDiv {
+  background-image: url('../images/dan-meyers-FtXCKGIWiqM-unsplash.jpg');
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.PageContent {
+  display: flex;
+  justify-content: space-evenly;
+  // flex: 1 1 auto;
+
+  flex-grow: 1;   
+  margin-bottom: 25px;
+  // border: 5px solid purple;
+  border-radius: 25px;
+}
+
+// Project Tile Stuff
+//---------------------
+.ProjectTileContainer{
+  color: #f1f1f1;  
+  // height: 40vh;
+  height: 100%;
+  width: 100%;
+  // width: 5vw;
+
+  text-align: center;
+  
+  // align-items: center;
+  margin: 0px auto;
+  // justify-content: center;
+  flex-grow: 1;
+  // background-color: rgba(255, 255, 255, 0);
+  // transition: background-color 1s ease-in-out;  
+  // background: linear-gradient(to right, #ff0000, #00ff00);
+  // transition: background 8s ease;
+
+  transition: background-position 1s ease-in-out;
+  // background-image: linear-gradient(to bottom, rgb(255,255,255,0), rgb(255,255,255,1));
+
+}
+
+
+.ProjectTileContainer:hover {
+  // background-color: #ffffff7e;
+  // background-color: pink;
+
+  background: linear-gradient(to bottom, rgb(255,255,255,1), rgb(255,255,255,0));
+  background-position: bottom;
+  
+  justify-content: space-between;
+  // animation: changeColor 2s forwards;
+}
+
+@keyframes changeColor {
+  0% { background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0)); }
+  100% { background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255)); }
+}
+
+.RotatingDiv{
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));
+  
+}
+
+.RotatingDiv:hover{
+  animation: rotateColor 3s infinite linear;
+  background-position: right; 
+}
+
+@keyframes rotateColor {
+  0% { background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0)); }
+  50% { background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255)); }
+  100% { background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(0, 0, 0));}
+}
+
+.SlidingTile {
+  // width: 250px;
+  width: 100%;
+  // height: 250px;
+  height: 100%;
+  text-align: center;
+  // border: 1px solid black;
+  color: white;
+  margin: auto;
+  border-radius: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.57), rgba(255, 255, 255, 0.562));
+  background-size: 100% 200%;
+  background-position: 0% -100%;
+  transition: background-position 0.5s ease;
+  // transition: background-position 0.5s cubic-bezier(0.1, 0.62, 0.2, 1);
+}
+
+.SlidingTile:hover {
+  background-position: 0% 0%;
+}
+
+
+.colorSwapper {
+  background-color: var(--color-background); // Sass map-get function
+  // background-color: red;
+  color: var(--color-two);
+}
+

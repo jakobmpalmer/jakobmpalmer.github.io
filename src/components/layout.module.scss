@@ -1,0 +1,247 @@
+
+
+.NavBox{
+    margin: 0 auto;
+    //max-width: 960px;
+    //padding: `1.45rem 1.0875rem`,
+    display: flex;
+    justify-content: center;
+    //justifyContent: "flex-end",  
+    
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } //' Check this does anything 
+
+    li > a {
+        text-decoration: none
+      }  
+}
+
+.portfolioPic{
+  border-radius: 50%;  
+  max-width: 35%;
+  height: auto;
+}
+
+
+.centeredVertical{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  //align-items: center;
+}
+
+.centeredHoriz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.zoom{
+  // background-color: green;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+iframe{
+  display: flex;
+  height: 600px;
+  width: 100%;
+}
+
+
+.icon-styles{
+  // vertical-align: middle;
+  margin: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  //filter: grayscale(100%);
+
+  width: 35em;
+} 
+
+.icon-styles img {
+  width: 75%;
+  max-width: 100px;
+  min-width: 70px;
+} 
+
+.postTitle{
+  display: flex;
+  justify-content: center;
+}
+
+.tagGroup{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectLinks{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+  img{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.projectTitles{
+  display: flex;
+  flex-direction: row;
+   img{
+     justify-content: flex-end;
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+}
+
+.projectPageLinks{
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tagStyle{
+  margin: 0px 10px 0px 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: small;  
+  padding: 5px;
+}
+
+.liveDemoButton{
+  background:"../../src/images/res/live-demo.png"
+}
+
+.aboutBegin{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  h1{
+    bottom: 0;
+    align-self: flex-end;
+  }
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+ul {
+    display: flex;
+}
+
+
+li {
+    //margin-bottom: calc(1.45rem / 2);
+    //margin-top: calc(1.45rem / 2);
+    text-decoration: none;
+    // border: 1px solid white;
+    border-radius: 10px;
+    // padding: 10px;
+    margin: 0px 10px 0px 10px;
+    list-style-type: none;
+  }
+  ol li {
+    padding-left: 0;
+  }
+  ul li {
+    padding-left: 0;
+  }
+  li > ol {
+    margin-left: 1.45rem;
+    margin-bottom: calc(1.45rem / 2);
+    margin-top: calc(1.45rem / 2);
+  }
+  li > ul {
+    margin-left: 1.45rem;
+    margin-bottom: calc(1.45rem / 2);
+    margin-top: calc(1.45rem / 2);
+  }
+  blockquote *:last-child {
+    margin-bottom: 0;
+  }
+  li *:last-child {
+    margin-bottom: 0;
+  }
+  p *:last-child {
+    margin-bottom: 0;
+  }
+  li > p {
+    margin-bottom: calc(1.45rem / 2);
+  }
+  li > img {
+    max-width: 25%;
+    max-height: 50%;
+  }
+
+
+  img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+  }
+
+  .button-image{
+    height: 30px;
+    width: 90px;
+  }
+
+  Layout{
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+
+  page-container {
+    position: relative;
+    min-height: 100vh;
+   // min-height: 100%;
+  }
+  
+  content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+
+  footer{
+    //position: fixed; 
+    position: fixed;
+    //padding: 10px 10px 0px 10px; 
+    bottom: 0px; 
+    width: 100%; 
+    // display: flex;
+    // flex-shrink: 0;
+    /* Height of the footer*/  
+    //height: 40px; 
+    height: 2.5rem;
+    //background: grey; 
+    // display: flex;
+    // justify-content: center;
+  }
+  
